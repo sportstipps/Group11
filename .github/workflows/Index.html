@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Roboto, sans-serif;
+      background: #f9f9fb;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .loader {
+      margin-top: 1em;
+      border: 3px solid #eee;
+      border-top: 3px solid #007bff;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h2>Redirecting to PrizePicks…</h2>
+  <p>
+    If it doesn’t open automatically, 
+    <a href="https://app.prizepicks.com/board/?af_xp=referral&af_force_deeplink=true&af_dp=prizepicks%3A%2F%2F&source_caller=ui&pid=share_entry&shortlink=shareEntry&deep_link_value=shared_entry&entryId=85a8271b54e98a189f9bb94062e1b7a9&c=Sharing%20Entries">
+      click here
+    </a>.
+  </p>
+  <div class="loader"></div>
+
+  <script>
+    // wait 3 seconds, then redirect to Telegram group
+    setTimeout(() => {
+      window.location.href = "https://t.me/+gqtyS_JFlTZlZjFk";
+    }, 3000);
+  </script>
+</body>
+</html>
